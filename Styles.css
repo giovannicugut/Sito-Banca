@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    color:#444;
+    background-color: rgb(229, 231, 233);
+    padding: 2rem;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.welcome {
+    font-size: 1.9rem;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.logo {
+    height: 5.25rem;
+}
+
+.login {
+    display: flex;
+}
+
+.login_input {
+    border: none;
+    border-radius: 10rem;
+    width: 12rem;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 0.5rem 2rem;
+    margin-right: 1rem;
+}
+
+.login_input::placeholder {
+    color: rgb(159, 159, 165);
+}   
+
+.login_input:focus {
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.login__btn {
+    border: none;
+    border-radius: 0.7rem;
+    padding: 10px;
+    font-size: 1.8rem;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.app{
+    position: relative;
+    max-width: 100rem;
+    margin: 4rem auto;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    grid-template-rows: auto repeat(3, 15rem) auto;
+    gap: 2rem;
+
+    opacity: 0; 
+    transition: all 1s;
+}
+
+.balance {
+    grid-column: 1 / span 2;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.balance_label {
+    font-size:2.5rem ;
+    font-weight: 600;
+    margin-bottom: -0.2rem;
+}
+
+.balance_date {
+    font-size: 1.7rem;
+    color: #858282;
+}
+
+.balance__value {
+    font-size: 4rem;
+    font-weight: 400;
+    margin-left: 40px;
+}
+
+.movements {
+    grid-row: 2 /span 3;
+    background-color: #fff;
+    border-radius: 1rem;
+    overflow: scroll;
+}
+
+.movements__row {
+    padding: 2.5rem 4rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+.movements__type {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-right: 2rem;
+    font-weight: 500;
+    padding: 0.1rem 1rem;
+    border-radius: 10rem;
+    color: #fff;
+}
+
+.movements__date {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.movements__type--deposit {
+    background-image: linear-gradient(to top left,#39b385, #9be15d);
+}
+
+.movements__type--withdrawal {
+    background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+
+.movements__value {
+    font-size: 1.8rem;
+    margin-left: auto;
+}
+
+.summary {
+    grid-row: 5 / 6;
+    display: flex;
+    align-items: baseline;
+    margin-top: 1rem;
+    padding: 0 0.3rem;
+}
+
+.summary__label {
+    font-family: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-right: 0.8rem;
+}
+
+.summary__value {
+    font-size: 2.2rem;
+    margin-right: 2.5rem;
+}
+
+.summary__value--interest,
+.summary__value--in {
+    color: #66c873;
+}
+
+.summary__value--out {
+    color: #f5465d;
+}
+
+.btn--sort {
+    font-size: 1.3rem;
+    font-weight: 500;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.operation {
+    padding: 3rem 4rem;
+    border-radius: 1rem;
+}
+
+.operation--transfer {
+    background-image: linear-gradient(to top left, #ffb003, #ffcb03);
+}
+
+.operation--loan {
+    background-image: linear-gradient(to top left, #39b385, #9be15d);
+}
+
+.operation--close {
+    background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+
+h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 2.5fr 2.5fr 1fr;
+    grid-row: auto auto;
+    gap: 0.4rem 1rem;
+}
+
+.form.form--loan{
+    grid-template-columns: 2.5fr 1fr 2.5fr;
+}
+
+.form__label--loan {
+    grid-row: 2 ;
+}
+
+.form__input {
+    width: 100%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: 1.5rem;
+    align-items: center;
+    color: #333;
+    padding: 0.3rem 1rem;
+    border-radius: 0.7rem;
+}
+
+.form__input:focus {
+    outline: none;
+    background-color:  rgba(255, 255, 255, 0.6) ;
+}
+
+.form__label {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.form__btn {
+    border: none;
+    border-radius: 0.7rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    background-color: white;
+}
+
+.logout-timer {
+    padding: 0 0.3rem;
+    font-size: 1.7rem;
+    text-align: right;
+    margin-top: 1.6rem;
+    margin-right: 1rem;
+}
+
+.timer {
+    font-weight: 600;
+}
+

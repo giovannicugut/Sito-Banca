@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banca app</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <nav>
+        <img src="logo.png" alt="logo" class="logo">
+
+        <form class="login">
+            <p class="welcome">Login</p>
+            <input type="text" placeholder="User" class=" login_input login-user">
+            <input type="password" placeholder="Pin" class=" login_input login-pin" maxlength="4">
+            <button class="login__btn">&rarr;</button>
+        </form>
+    </nav>
+
+    <main class="app">
+        <div class="balance">
+            <div>
+                <p class="balance_label">Saldo finale</p>
+                <p class="balance_date"> il <span class="date">02/05/2025</span></p>
+             </div>
+            <p class="balance__value">0000 E</p>   
+        </div>
+
+        <div class="movements">
+            <div class="movements__row">
+                <div class="movements__type movements__type--deposit">2 Accreditato</div>
+                <div class="movements__date">3 giorni fa</div>
+                <div class="movements__value">4000 E</div>
+            </div>
+            <div class="movements__row">
+                <div class="movements__type movements__type--withdrawal">1 Addebitato</div>
+                <div class="movements__date">24/04/2025</div>
+                <div class="movements__value">-378 E</div>
+            </div>
+        </div>
+
+        <div class="summary">
+            <p class="summary__label">Entrata</p>
+            <p class="summary__value summary__value--in">0000 E</p>
+            <p class="summary__label">Uscita</p>
+            <p class="summary__value summary__value--out">0000 E</p>
+            <p class="summary__label">Saldo</p>
+            <p class="summary__value summary__value--interest">0000 E</p>
+            <button class="btn--sort"> &downarrow; Filtra</button>
+        </div>
+
+        <div class="operation operation--transfer">
+            <h2>Bonifico</h2>
+            <form class="form form--transfer">
+                <input type="text" class="form__input form__input--to">
+                <input type="number" class="form__input form__input--amount">
+                <button class="form__btn form__btn--transfer"> &rarr;</button>
+                <label class="form__label">Destinatario</label>
+                <label class="form__label">Importo</label>
+            </form>
+        </div>
+
+        <div class="operation operation--loan">
+            <h2>Ricarica</h2>
+            <form class="form form--loan">
+                <input type="number" class=" form__input form__input--loan-amount">
+                <button class="form__btn form__btn--loan">&rarr;</button>
+                <label class="form__label form__label--loan">Importo</label>
+            </form>
+        </div>
+
+        <div class="operation operation--close">
+            <h2>Account Delete</h2>
+            <form class="form form--close">
+                <input type="text" class="form__input form__input--user">
+                <input type="password" maxlength="4" class="form__input form__input--pin">
+                <button class="form__btn form__btn--close">&rarr;</button>
+                <label class="form__label">Utente</label>
+                <label class="form__label">Pin</label>
+            </form>
+        </div>
+
+        <p class="logout-timer">Sessione finisce tra <span class="timer">05:00</span></p>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
