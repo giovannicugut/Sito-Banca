@@ -238,7 +238,7 @@ if (
     currentAcount.movements.push(-summaBonifico);
 
     currentAcount.movementsDates.push(new Date().toISOString());  //aggiungo data reale
-
+    destinatario.movementsDates.push(new Date().toISOString());
     attivoFunction(currentAcount);
      
     inputTransferAmount.value = inputTransferTo.value  = ""  // pilisce i campi compilati
@@ -326,7 +326,7 @@ btnSort.addEventListener("click", function (e) {
 
 // 11) Timer logOut
 function timer() {
-  let timp = 300; // Imposta il timer iniziale a 300sec git push(5 min)
+  let timp = 300; // Imposta il timer iniziale a 300sec (5 min)
 
   function tick() {
     const min = String(Math.trunc(timp / 60)).padStart(2, 0); // convertito nella stringa per poter usare(padstart)
