@@ -3,7 +3,7 @@ Sono 4 Acount:
    1)  login = "af"    password = "1111";
    2)  login = "df"    password = "1111";
    3)  login = "pf"    password = "1111";
-   4)  login = "af"    password = "1111";
+   4)  login = "si"    password = "1111";
 
 L'app consente di:
   - Effettuare bonifici  veloce
