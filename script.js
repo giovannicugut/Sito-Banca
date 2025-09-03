@@ -347,7 +347,7 @@ function timer() {
   }
 
   tick(); // Esegui subito per mostrare il timer iniziale
-  let conSetInter = setInterval(ti ck, 1000); // Aggiorna ogni secondo
+  let conSetInter = setInterval(tick, 1000); // Aggiorna ogni secondo
 
   return conSetInter;
 }
