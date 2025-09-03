@@ -14,7 +14,8 @@ L'app consente di:
   - Le entrate
   - Le uscite
   - Il saldo finale
-  - 
-- Filtrare i movimenti
+
+ 
+Filtrare i movimenti
   
-- Gestire la sessione con un timer automatico per maggiore sicurezza
+Gestire la sessione con un timer automatico per maggiore sicurezza
