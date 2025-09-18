@@ -1,5 +1,5 @@
 # Sito-Banca
-Sono 4 Acount:
+Sono 4 Acount: È necessario utilizzarne uno per accedere al sistema bancario.
    1)  login = "af"    password = "1111";
    2)  login = "df"    password = "1111";
    3)  login = "pf"    password = "1111";
